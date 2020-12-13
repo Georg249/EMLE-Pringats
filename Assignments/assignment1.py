@@ -9,10 +9,9 @@ import nltk
 import matplotlib.pyplot as plt
 data = pd.read_csv("Assignments/CodesForCourse.csv")
 
-print("DATA OVERVIEW:")
-
 data["ID"] = range(len(data))
-print(data)
+
+data.head()
 
 print(f"There are {len(data['issuer_eng'].unique())} distinct entries for issuer names")
 
